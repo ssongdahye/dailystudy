@@ -1,0 +1,59 @@
+## 1일차(2021-06-28, 월)
+- 교육과정의 목표: 웹 개발자 역량 습득
+- 웹 개발자의 진로: SI/SM, 스타트업, 서비스, 공사 등
+- 소프트웨어(S/W) 개요
+	- System S/W: 하드웨어 제어, OS, 드라이버 등.
+	- Application S/W: Photoshop, MS-Office, hwp, 게임, 카카오톡 등
+		- Standalone: PC 설치형 = Desktop App
+		- Client/Server: PC에 설치 + 원격컴퓨터에 설치 (Client + server)
+			      => 카카오톡, LOL게임, Spotify, Skype, WebEx(화상회의) 등
+		- Web Application: web browser + web server
+			      => 구성요소: Java App, HTML/CSS/JavaScript
+			      => 네이버메일, Netflix, MS-Office365, 지도 등
+	- Back-end 개발: Java Application을 작성할 때 사용되는 기술 개요
+		- Java Application: 출력할 데이터를 가공, 입력한 데이터를 저장/조회/변경/삭제, 사용자 인증(로그인), 사용자 권한(관리자,일반,손님)
+	-. Front-end 개발: HTML/CSS/JavaScript 기술 개요
+		- HTML: 화면 구성 <- Java App.에서 준비한 데이터를 사용
+		- CSS: 화면의 모양(색상, 크기, 위치 등)제어 + Bootstrap 라이브러리
+		- JavaScript: 화면의 동작제어 + jQuery 라이브러리
+- 개발 학습 도구 준비
+	- WebEx 온라인 화상 통신 설치
+	- git 설정: S/W 버전관리 시스템
+		- 계정 생성 및 개인 저장소 생성
+		- git 클라이언트 설치(git-scm.com)
+	- git 저장소 가져오기: git clone 저장소URL (최초로 가져올 때)
+	- 저장소에 추가된 파일 가져오기: git pull
+
+## 2일차(2021-06-29, 화)
+- git 저장소에 파일 업로드 하기
+	① 임시 암호(토큰) 발급: 계정-settings-Developer Settings-Personal access tokens-generate new token => 생성된 토큰을 암호대신 사용한다, 생성하고 난 직후 한번만 보여주니 다른곳에 저장해놓기(ex. 메일)
+	② 변경(추가/변경/삭제)된 내용 백업
+		- 백업 파일 명단 작성: git add . ( . -> 현재 폴더 및 그 하위 폴더에서 추가되거나 변경, 삭제된 모든 파일)
+		- 명단에 등록한 파일 백업: git commit -m "백업설명"
+			=> local 저장소에 저장한다. (.git 이라는 숨김폴더에 저장됨)
+			=> 현업에서는 백업설명 중요, 보통 회사에서 쓰이는 규칙이 존재
+	③ 로컬 저장소의 변경 내용을 서버에 업로드: git push -> git username 입력 -> 토큰 입력
+- 프로그램 만들고 실행하기
+	- VSCode 편집기 설치
+	- 컴파일 방식
+		- 소스와 기계어, 컴파일, 컴파일러의 관계: 소스(명령어)를 기계어로 번역하는 것이 컴파일, 컴파일을 하는 프로그램이 컴파일러
+		- 기계어: CPU가 인식할 수 있는 명령어 = CPU instruction set
+			- 기계어와 OS와 CPU의 관계: 기계어를 OS가 읽어오고 CPU한테 전달하여 CPU가 명령어를 처리
+		- mingw64 윈도우 gcc 컴파일 설치
+		- C 언어로 "Hello, world!" 를 출력하는 프로그램 만들기
+
+	- 인터프리터 방식: 소스 파일의 명령을 도우미 프로그램(통역기 = interpreter)을 통해 바로 실행
+		- JavaScript, PHP, Python 등
+		- node.js 자바스크립트 인터프리터(=엔진) 설치
+		- JavaScript 언어로 "Hello, world!"를 출력하는 프로그램 만들기
+
+
+
+
+
+
+
+
+
+
+
